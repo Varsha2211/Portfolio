@@ -2,42 +2,47 @@
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100px;
     height: 100px;
+}
+
+#skillsH1,#projectH1,#contactH1 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: cursive;
+    color: rgb(86, 230, 186);
+}
+
+/*=================================================HEADING====================================================*/
+
+#logo {
+    width: 270px;
+    height: 150px;
 }
 
 header{
     display: flex;
     align-items: center;
     width: auto;
-    margin: 10px;
+    margin: 20px;
 }
 
-.logo {
-    font-family: cursive;
-    font-size: 50px;
-    font-weight: 900;
-    color: black;
+ul {
+    margin-left: 280px;
 }
 
 li {
     text-decoration: none;
     display: inline-block;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding: 20px;
     font-family: cursive;
     font-size: 40px;
     font-weight: 900;
-}
-
-.main {
-    width: auto;
-    margin: 10px;
-    font-size: 30px;
-    font-weight: 800;
-    font-family: cursive;
-    color: rgb(86, 230, 186);
 }
 
 a {
@@ -47,19 +52,34 @@ a {
 
 #animation {
     text-decoration: none;
-    color: rgb(145, 202, 228);
+    color: rgb(86, 230, 186);
     transition: 0.2s;
 }
 
 #animation:hover {
     font-size: 50px;
-    color: rgb(115, 163, 236);
+    color: rgb(30, 31, 30);
 }
 
 /*=================================================ABOUT====================================================*/
 
-.layout{
+.about{
     display: flex;
+    border: solid black 5px;
+    margin: 20px;
+}
+
+.main {
+    width: auto;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(86, 230, 186);
+}
+
+.main-animation {
+    font-weight: 700;
+    font-family: cursive;
 }
 
 #varsha {
@@ -67,10 +87,14 @@ a {
     height: auto;
 }
 
+.left-side {
+    width: 65%;
+    padding: 20px;
+}
+
 .right-side {
     display: flex;
-    align-items: center;
-    margin-left: 150px;
+    width: auto;
 }
 
 .link {
@@ -80,7 +104,7 @@ a {
 }
 
 .github, .linkedin {
-    font-size: 55px;
+    font-size: 42.3px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
@@ -97,13 +121,16 @@ a {
 
 /*=================================================SKILLS====================================================*/
 .skills {
+    display: flex;
+    border: solid black 5px;
+    margin: 20px;
     display: block;
     padding: 20px;
     align-items: center;
     text-align: center;
 }
 
-.html, .css , .javascript, .bootstrap, .rdbms, .jquery, .php, .xml, .mysql{
+.html, .css , .javascript, .bootstrap, .rdbms{
     display: inline-block;
     padding: 20px;
     border: rgb(134, 170, 236);
@@ -114,8 +141,9 @@ a {
 
 /*=================================================CONTACT====================================================*/
 .contact {
-    display: block;
     text-align: center;
+    border: solid black 5px;
+    margin: 20px;
 }
 
 #contactImage {
@@ -124,13 +152,11 @@ a {
 }
 
 .contactTable {
-    
     width: auto;
     height: auto;
     margin: 20px;
     margin-left: 370px;
     padding:10px;
-    border: 5px solid black;
 }
 
 td {
@@ -142,9 +168,10 @@ td {
 
 /*=================================================PROJECTS===================================================*/
 .project {
-    display:  block;
+    display: block;
+    border: solid black 5px;
+    margin: 20px;
     text-align: center;
-    width: 90%;
 }
 
 #sc {

@@ -14,31 +14,33 @@
 <body>
     <div class="container">
         <header>
-            <span class="logo" id="logo">Varsha Singh</span>
+            <span class="logo">
+                <img id="logo" src="images/logo.jpg" alt="logo">
+            </span>
             <nav>
                 <ul>
-                    <li><a id="animation" href="index.html" id="aboutLink">About</a></li>
-                    <li><a id="animation" href="#" id="skillsLink">Skill</a></li>
-                    <li><a id="animation" href="#" id="projectsLink">Projects</a></li>
-                    <li><a id="animation" href="#" id="contactLink">Contact</a></li>
+                    <li><a id="animation" href="#about" id="aboutLink">About</a></li>
+                    <li><a id="animation" href="#skills" id="skillsLink">Skill</a></li>
+                    <li><a id="animation" href="#project" id="projectsLink">Projects</a></li>
+                    <li><a id="animation" href="#contact" id="contactLink">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <div class="layout">
+        <div class="about" id='about'>
             <div class="left-side">
                 <section class="main" id="main">
                     <h1 class="main-animation">Hi,</h1>
                     <h1 class="main-animation">I'am Varsha Singh</h1>
                     <h1 class="main-animation">Web Designer & Web Deveoper</h1>
-                    <a id="animation" href="#" class="main-animation">Contact Me</a>
                 </section>
             </div>
 
             <div class="right-side">
                 <div class="img">
-                    <img id="varsha" src="images/9.jpg" alt="Varsha" height="200px" width="150px">
+                    <img id="varsha" src="images/varsha.jpg" alt="Varsha" height="200px" width="150px">
                 </div>
+
                 <div class="links">
                     <div class="github">
                         <a href="https://github.com/Varsha2211/">Github</a>
@@ -46,13 +48,37 @@
                     <div class="linkedin">
                         <a href="https://www.linkedin.com/in/varsha-singh-0a7491169">LinkedIn</a>
                     </div>
-
                 </div>
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <h1 id="skillsH1">Skills</h1>
+            <div class="html">
+                <img id='html' src="images/1.png" alt="html">
+                <p> HTML </p>
+            </div>
+            <div class="css">
+                <img id='css' src="images/2.png" alt="css">
+                <p> CSS</p>
+            </div>
+            <div class="javascript">
+                <img id='javascript' src="images/3.png" alt="javascript">
+                <p> javascript </p>
+            </div>
+            <div class="bootstrap">
+                <img id='bootstrap' src="images/4.png" alt="bootstrap">
+                <p> Bootstrap </p>
+            </div>
+            <div class="rdbms">
+                <img id='rdbms' src="images/5.png" alt="rdbms">
+                <p> RDBMS </p>
             </div>
         </div>
     
 
-        <div class="project">
+        <div class="project" id="project">
+            <h1 id="projectH1">Projects</h1>
             <div class='w3-container sc'>
                 <h2 id='sc'>SMART CITY</h2>
                 <p> An IoT Based Model</p>
@@ -109,6 +135,26 @@
                 </p>
             </div>
         </div>
+
+        <div class="contact" id="contact">
+            <h1 id="contactH1">Contact</h1>
+            <table class="contactTable">
+                <tr>
+                  <td><img id='mobile' src="images/6.jpg" alt="mobile"></td>
+                  <td> 9560453880 </td>
+                </tr>
+                <tr>
+                  <td><img id='mobile' src="images/7.png" alt="email"></td>
+                  <td>varshasingh22111997@gmail.com</td>
+                </tr>
+                <tr>
+                  <td><img id='address' src="images/8.png" alt="address"></td>
+                  <td>New Dehi, India </td>
+                </tr>
+              </table>
+        </div>
+
+    
 </div>
 </body>
 
