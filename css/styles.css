@@ -11,12 +11,20 @@ img {
     height: 100px;
 }
 
-#aboutH1, #skillsH1, #projectH1, #contactH1, #achievementsH1 {
-    font-size: 45px;
+#projectH1, #contactH1, #achievementsH1 {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 50px;
     font-weight: 800;
-    text-shadow: 2px 2px 5px red;
     font-family: cursive;
-    color: rgb(230, 30, 16);
+    color: rgb(86, 230, 186);
+}
+
+#gif {
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
 }
 
 /*=================================================HEADING====================================================*/
@@ -63,7 +71,6 @@ a {
 }
 
 
-
 /*=================================================INTRODUCTION====================================================*/
 .intro{
     display: flex;
@@ -73,8 +80,7 @@ a {
 
 .main {
     width: auto;
-    margin: 10px;
-    font-size: 30px;
+    margin: 30px;
     font-weight: 800;
     color: rgb(86, 230, 186);
 }
@@ -90,9 +96,10 @@ a {
 }
 
 #varsha {
-    width: 350px;
+    margin: 20px;
+    width: 300px;
     height: auto;
-    border: solid black 3px;
+    border: inset rgb(0, 0, 0) 5px;
 }
 
 .left-side {
@@ -101,30 +108,24 @@ a {
 }
 
 .right-side {
-    display: flex;
+    display: block;
     width: auto;
 }
 
-.link {
-    display: block;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+.links {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.github, .linkedin {
-    font-size: 42.3px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+.github, .linkedin{
+    display: inline-block;
+    margin-left: 10px;
 }
 
-.github {
-    background-color: black;
-    padding:17px;
-}
-
-.linkedin {
-    background-color: rgb(86, 86, 241);
-    padding: 17px;
+#github, #linkedin {
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -133,12 +134,17 @@ a {
 .about{
     display: block;
     text-align: center;
-    border: solid black 5px;
     margin: 20px;
+}
+
+#aboutimg {
+    margin-top: 10px;
+    width: 200px;
 }
 
 .aboutContent {
     justify-content: center;
+    font-style: italic;
     padding: 20px;
     font-family: cursive;
     font-size: 20px;
@@ -149,7 +155,6 @@ a {
 /*=================================================SKILLS====================================================*/
 .skills {
     display: flex;
-    border: solid black 5px;
     margin: 20px;
     display: block;
     padding: 20px;
@@ -157,12 +162,59 @@ a {
     text-align: center;
 }
 
+#skillsimg {
+    width: 200px;
+}
+
+.bar {
+    width: 150px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.percentHtml {
+    align-items: center;
+    width: 135px;
+    background-color: rgb(86, 230, 186);
+    border-radius: 10px;
+}
+
+.percentCss {
+    align-items: center;
+    width: 115px;
+    background-color: rgb(86, 230, 186);
+    border-radius: 10px;
+}
+
+.percentJavascript {
+    align-items: center;
+    width: 105px;
+    background-color: rgb(86, 230, 186);
+    border-radius: 10px;
+}
+
+.percentBootstrap {
+    align-items: center;
+    width: 95px;
+    background-color: rgb(86, 230, 186);
+    border-radius: 10px;
+}
+
+.percentRdbms {
+    align-items: center;
+    width: 115px;
+    background-color: rgb(86, 230, 186);
+    border-radius: 10px;
+}
+
 .html, .css , .javascript, .bootstrap, .rdbms{
     display: inline-block;
     background-color: white;
     padding: 20px;
-    border: rgb(134, 170, 236);
-    border: dotted;
+    border: rgb(10, 10, 10);
+    border: solid;
     border-radius: 2px;
     margin: 5px; 
 }
@@ -205,23 +257,28 @@ td {
     text-align: center;
 }
 
+#projectimg {
+    margin-top: 10px;
+    width: 100px;
+}
+
 #projectlinks {
-    color: rgb(13, 14, 13);
-    font-family: cursive;
+    color: rgb(86, 230, 186);
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 20px;
 }
 
 #projectlinks:hover {
     font-size: 25px;
-    color: rgb(136, 230, 230);
+    color: rgb(0, 0, 0);
 }
 
 #sc,#phs,#ep,#mvm, #cms{
-    font-weight: 900;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    color: rgb(98, 209, 131);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(38, 106, 233);
 }
 
 .sc, .ep, .mvm, .phs, .cms{
@@ -231,7 +288,7 @@ td {
     height: auto;
     margin: 20px;
     padding:20px;
-    border: 1px groove rgb(236, 101, 101);
+    border: 1px groove rgb(0, 0, 0);
 }
 
 .mySlides,.mySlides1,.mySlides2,.mySlides3, .mySlides4 {
@@ -251,3 +308,12 @@ td {
     margin: 20px;
     text-align: center;
 }
+
+#ach{
+    justify-content: center;
+    font-style: italic;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
