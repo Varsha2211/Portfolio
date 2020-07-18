@@ -11,11 +11,12 @@ img {
     height: 100px;
 }
 
-#skillsH1,#projectH1,#contactH1 {
+#aboutH1, #skillsH1, #projectH1, #contactH1, #achievementsH1 {
     font-size: 45px;
     font-weight: 800;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(196, 158, 231);
+    text-shadow: 2px 2px 5px red;
+    font-family: cursive;
+    color: rgb(230, 30, 16);
 }
 
 /*=================================================HEADING====================================================*/
@@ -36,9 +37,13 @@ li {
     text-decoration: none;
     display: inline-block;
     padding: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: cursive;
     font-size: 35px;
     font-weight: 800;
+}
+
+ul {
+    padding-left: 120px;
 }
 
 a {
@@ -53,15 +58,15 @@ a {
 }
 
 #animation:hover {
-    font-size: 50px;
+    font-size: 39px;
     color: rgb(30, 31, 30);
 }
 
-/*=================================================ABOUT====================================================*/
 
-.about{
+
+/*=================================================INTRODUCTION====================================================*/
+.intro{
     display: flex;
-    background-color: black;
     border: solid black 5px;
     margin: 20px;
 }
@@ -77,6 +82,11 @@ a {
 .main-animation {
     font-weight: 700;
     font-family: cursive;
+}
+
+.main-animation:hover {
+    font-size: 50px;
+    color: rgb(10, 10, 10);
 }
 
 #varsha {
@@ -117,10 +127,28 @@ a {
     padding: 17px;
 }
 
+
+
+/*=================================================ABOUT====================================================*/
+.about{
+    display: block;
+    text-align: center;
+    border: solid black 5px;
+    margin: 20px;
+}
+
+.aboutContent {
+    justify-content: center;
+    padding: 20px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+
+
 /*=================================================SKILLS====================================================*/
 .skills {
     display: flex;
-    background-color: black;
     border: solid black 5px;
     margin: 20px;
     display: block;
@@ -139,10 +167,10 @@ a {
     margin: 5px; 
 }
 
+
 /*=================================================CONTACT====================================================*/
 .contact {
     text-align: center;
-    background-color: black;
     border: solid black 5px;
     margin: 20px;
 }
@@ -168,19 +196,25 @@ td {
     font-family: cursive;
 }
 
+
 /*=================================================PROJECTS===================================================*/
 .project {
     display: block;
-    background-color: black;
     border: solid black 5px;
     margin: 20px;
     text-align: center;
 }
 
 #projectlinks {
-    color: rgb(0, 255, 200);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(13, 14, 13);
+    font-family: cursive;
+    font-weight: 600;
     font-size: 20px;
+}
+
+#projectlinks:hover {
+    font-size: 25px;
+    color: rgb(136, 230, 230);
 }
 
 #sc,#phs,#ep,#mvm, #cms{
@@ -207,3 +241,13 @@ td {
 
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
+
+
+
+/*=================================================ACHEIVEMENTS===================================================*/
+.achievements {
+    display: block;
+    border: solid black 5px;
+    margin: 20px;
+    text-align: center;
+}
