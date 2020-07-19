@@ -8,117 +8,122 @@
     <script src='js/script.js'></script>
     <link rel="stylesheet" href="css/animation_styles.css">
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Varsha Singh- Portfolio</title>
 </head>
 
 <body>
-    <div class="container-portfolio">
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
+    <div class="container">
+        <header>
+            <span class="logo">
+                <img id="logo" src="images/logo.jpg" alt="logo">
+            </span>
+            <nav>
+                <ul>
+                    <li><a id="animation" href="#about" id="aboutLink">About</a></li>
+                    <li><a id="animation" href="#skills" id="skillsLink">Skill</a></li>
+                    <li><a id="animation" href="#project" id="projectsLink">Projects</a></li>
+                    <li><a id="animation" href="#achievements" id="achievementLink">Achievements</a></li>
+                    <li><a id="animation" href="#contact" id="contactLink">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <a class="navbar-brand"><img id="logo" src="images/logo.jpg" alt="logo"></a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navi">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" id="aboutLink">About</a></li>
-                        <li><a href="#skills">Skill</a></li>
-                        <li><a href="#project">Projects</a></li>
-                        <li><a href="#achievements">Achievements</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- <li><a href="https://github.com/Varsha2211/"><img id="github" src="images/git.png" alt="github"></a></li> -->
-                        <li><a href="https://www.linkedin.com/in/varsha-singh-0a7491169"><img id="linkedin"
-                                    src="images/linkedin.png" alt="linkedin"></a></li>
-                    </ul>
-
-                </div>
+        <div class="intro" id='intro'>
+            <div class="left-side">
+                <section class="main" id="main">
+                    <h1 class="main-animation">Hi,</h1>
+                    <h1 class="main-animation">I'am Varsha Singh</h1>
+                    <h1 class="main-animation">Web Designer & Web Developer</h1>
+                    
+                </section>
             </div>
-        </nav>
 
-        <div class="container">
-            <div class="container-fluid" id='intro'>
-                <div class="row intro">
-                    <div class="col-lg-6  left-side">
-                            <h1 class="main-animation">Hi,</h1>
-                            <h1 class="main-animation">I'am Varsha Singh</h1>
-                            <h1 class="main-animation">Web Designer & Web Developer</h1>
+            <div class="right-side">
+                <div class="img">
+                    <img id="varsha" src="images/varsha.jpg" alt="Varsha" height="200px" width="150px">
+                </div>
+
+                <div class="links">
+                    <div class="github">
+                        <a href="https://github.com/Varsha2211/">
+                            <img id="github" src="images/git.png" alt="github"></a>
                     </div>
 
-                    <div class="col-lg-6  right-side">
-                       <img id="varsha" src="images/varsha.jpg" alt="Varsha">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/varsha-singh-0a7491169">
+                            <img id="linkedin" src="images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <h1 id="aboutH1">About</h1>
+            <div class="aboutContent">
+                <p class="aboutText"> <span>😀</span> <br>I'm one of those who believes in
+                    efficiency and hard work and is determined to improve. </p>
+                <p class="aboutText"><span>😍</span><br>Creativity is something everyone associates me with too as I love to
+                    create unique and crafty things.
+                </p>
+                <p class="aboutText"><span>📚 🏸</span><br>On the hobbies front, I love reading books and playing badminton.
+                </p>
+                <p class="aboutText"><span>🌱</span>I'm a person determined to grow, succeed professionally and
+                    personally along with taking in
+                    care my social and environmental responsibilities as a human</p>
+                </p>
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <div class="skillsHeading">
+                <img id='skillsimg' src="images/skills.jpg" alt="skills">
+            </div>
+            <div class="skill">
+                <div class="html">
+                    <img id='html' src="images/1.png" alt="html">
+                    <p> HTML </p>
+                    <div class="bar">
+                        <div class="percentHtml">95%</div>
+                    </div>
+                </div>
+                
+                <div class="css">
+                    <img id='css' src="images/2.png" alt="css">
+                    <p> CSS</p>
+                    <div class="bar">
+                        <div class="percentCss">70%</div>
+                    </div>
+                </div>
+    
+                <div class="javascript">
+                    <img id='javascript' src="images/3.png" alt="javascript">
+                    <p> Javascript </p>
+                    <div class="bar">
+                        <div class="percentJavascript">60%</div>
+                    </div>
+                </div>
+    
+                <div class="bootstrap">
+                    <img id='bootstrap' src="images/4.png" alt="bootstrap">
+                    <p> Bootstrap </p>
+                    <div class="bar">
+                        <div class="percentBootstrap">50%</div>
+                    </div>
+                </div>
+    
+                <div class="rdbms">
+                    <img id='rdbms' src="images/5.png" alt="rdbms">
+                    <p> RDBMS </p>
+                    <div class="bar">
+                        <div class="percentRdbms">70%</div>
                     </div>
                 </div>
             </div>
         </div>
 
-            <!-- <div class="about" id="about">
-            <div class="aboutHeading">
-                <img id='aboutimg' src="images/about.png" alt="about">
-            </div>
-            <div class="aboutContent">
-                <img id='abouttext' src="images/aboutcontent.png" alt="about">
-            </div>
-        </div> -->
 
-            <!-- <div class="skills" id="skills">
-            <div class="skillsHeading">
-                <img id='skillsimg' src="images/skills.jpg" alt="skills">
-            </div>
-            <div class="html">
-                <img id='html' src="images/1.png" alt="html">
-                <p> HTML </p>
-                <div class="bar">
-                    <div class="percentHtml">95%</div>
-                </div>
-            </div>
-            <div class="css">
-                <img id='css' src="images/2.png" alt="css">
-                <p> CSS</p>
-                <div class="bar">
-                    <div class="percentCss">70%</div>
-                </div>
-
-            </div>
-            <div class="javascript">
-                <img id='javascript' src="images/3.png" alt="javascript">
-                <p> Javascript </p>
-                <div class="bar">
-                    <div class="percentJavascript">60%</div>
-                </div>
-
-            </div>
-            <div class="bootstrap">
-                <img id='bootstrap' src="images/4.png" alt="bootstrap">
-                <p> Bootstrap </p>
-                <div class="bar">
-                    <div class="percentBootstrap">50%</div>
-                </div>
-
-            </div>
-            <div class="rdbms">
-                <img id='rdbms' src="images/5.png" alt="rdbms">
-                <p> RDBMS </p>
-                <div class="bar">
-                    <div class="percentRdbms">70%</div>
-                </div>
-
-            </div>
-        </div> -->
-
-
-            <!-- <div class="project" id="project">
+        <div class="project" id="project">
             <div class="projectHeading">
                 <img id='projectimg' src="images/project.png" alt="project">
                 <h1 id="projectH1">Projects</h1>
@@ -272,48 +277,51 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
-            <!-- <div class="achievements" id="achievements">
+        <div class="achievements" id="achievements">
             <div class="achievementHeading">
-                <img id="gif" src='images/acheivement.gif'>
+                <img id="gif-ach" src='images/acheivement.gif'>
                 <h1 id="achievementsH1">Achievements</h1>
             </div>
 
-            <p id="ach">1st Position in IoT workshop held at BVCOE, 2017
-            <div id="flip">Certificate</div>
-            <div id="panel"><img id='certi' src="images/bhu.jpg" alt="IoT"></div>
-            </p>
+            <div class="ach">
+                     1st Position in IoT workshop held at BVCOE, 2017
+                    <div id="flip">Certificate</div>
+                    <div id="panel"><img id='certi' src="images/bhu.jpg" alt="IoT"></div>
+            </div>
 
-            <p id="ach">2nd Position in FERVOUR organized by BVCOE IEEE,2018
+            <div class="ach">2nd Position in FERVOUR organized by BVCOE IEEE,2018
             <div id="flip1">Certificate</div>
             <div id="panel1"><img id='certi' src="images/fervour.jpg" alt="fervour"></div>
-            </p>
+            </div>
 
-            <p id="ach">3rd Position in EVOTECH organized by BVCOE CSI,2018
+            <div class="ach">3rd Position in EVOTECH organized by BVCOE CSI,2018
             <div id="flip2">Certificate</div>
             <div id="panel2"><img id='certi' src="images/Evotech.jpg" alt="Evotech"></div>
-            </p>
+            </div>
 
-            <p id="ach">3rd Position in IIT VARANASI TECHNEX ,2018
+            <div class="ach">3rd Position in IIT VARANASI TECHNEX ,2018
             <div id="flip3">Certificate</div>
             <div id="panel3"><img id='certi' src="images/bhu.jpg" alt="bhu"></div>
-            </p>
+            </div>
 
-        </div> -->
-            <!-- 
+        </div>
+
         <div class="contact" id="contact">
+
             <div class="contactHeading">
-                <img id="gif" src='images/contact.gif'>
+                <img id="gif-contact" src='images/contact.gif'>
                 <h1 id="contactH1">Contact</h1>
             </div>
+
             <table class="contactTable">
                 <tr>
                     <td><img id='mobile' src="images/6.jpg" alt="mobile"></td>
                     <td> 9560453880 </td>
                 </tr>
                 <tr>
-                    <td><img id='mobile' src="images/7.png" alt="email"></td>
+                    <td><img id='email' src="images/7.png" alt="email"></td>
                     <td>varshasingh22111997@gmail.com</td>
                 </tr>
                 <tr>
@@ -321,7 +329,7 @@
                     <td>New Dehi, India </td>
                 </tr>
             </table>
-        </div> -->
+
         </div>
 </body>
 
